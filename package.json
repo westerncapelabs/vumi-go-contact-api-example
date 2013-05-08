@@ -1,0 +1,30 @@
+{
+  "name": "vumi-go-contact-api-example",
+  "version": "0.0.1",
+  "description": "A Vumi Go application to demo contact api access.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "vumigo_v01": "0.1.x"
+  },
+  "devDependencies": {
+    "mocha": "~1.7.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/westerncapelabs/vumi-go-contact-api-example"
+  },
+  "keywords": [
+    "vumi",
+    "ussd",
+    "sms"
+  ],
+  "author": "Mike Jones <mike@westerncapelabs.com>",
+  "license": "BSD",
+  "readmeFilename": "README"
+}

@@ -1,0 +1,16 @@
+{
+    "key": "f953710a2472447591bd59e906dc2c26",
+    "surname": "Trotter",
+    "user_account": "test-0-user",
+    "bbm_pin": null,
+    "msisdn": "+27831234567",
+    "created_at": "2013-04-24 14:01:41.803693",
+    "gtalk_id": null,
+    "dob": null,
+    "groups": ["group-a", "group-b"],
+    "facebook_id": null,
+    "$VERSION": null,
+    "twitter_handle": null,
+    "email_address": null,
+    "name": "Rodney"
+}
