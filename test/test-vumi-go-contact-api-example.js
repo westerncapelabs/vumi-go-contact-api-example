@@ -127,7 +127,7 @@ describe("test_vumi_go_contact_api_example", function() {
 
     var tester = new CustomTester(function (api) {
         api.config_store.config = JSON.stringify({
-            test_contact_data: JSON.parse(fs.readFileSync("test/fixtures/contact.json"))
+            //test_contact_data: JSON.parse(fs.readFileSync("test/fixtures/contact.json"))
         });
         fixtures.forEach(function (f) {
             api.load_http_fixture(f);
@@ -135,7 +135,7 @@ describe("test_vumi_go_contact_api_example", function() {
     });
 
     // first test should always start 'null, null' because we haven't started interacting yet
-    it.skip("Unknown contact - welcome screen", function () {
+    it("Unknown contact - welcome screen", function () {
         tester.check_state(null, null, "welcome_state",
             "^Welcome! Would you like to give us your first name\\?[^]" +
             "1. Yes[^]" +
@@ -175,7 +175,7 @@ describe("test_vumi_go_contact_api_example", function() {
             user,
             "Dave",
             "name_confirm",
-            "^Is your first name 'Dave'\\?[^]" +
+            "^We saved your first name as 'Dave'. Correct\\?[^]" +
             "1. Yes[^]" +
             "2. No$"
             );
@@ -211,7 +211,7 @@ describe("test_vumi_go_contact_api_example", function() {
             );
     });
 
-    it("Known contact - welcome screen", function () {
+    it.skip("Known contact - welcome screen", function () {
         tester.check_state(null, null, "welcome_state",
             "^Welcome Rodney! Would you like to update first name\\?[^]" +
             "1. Yes[^]" +
