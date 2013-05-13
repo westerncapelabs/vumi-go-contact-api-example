@@ -39,7 +39,7 @@ describe("test_vumi_go_contact_api_example", function() {
     var fixtures = [];
 
     var tester = new vumigo.test_utils.ImTester(app.api, {
-        setup: function (api) {
+        custom_setup: function (api) {
             api.config_store.config = JSON.stringify({});
             fixtures.forEach(function (f) {
                 api.load_http_fixture(f);
@@ -64,7 +64,7 @@ describe("test_vumi_go_contact_api_example", function() {
         var user = {
             current_state: 'welcome_state'
         };
-        var p = tester.check_state({
+        var p = tester.check_close({
             user: user,
             content: "2",
             next_state: "end_state",
